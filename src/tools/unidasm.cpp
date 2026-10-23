@@ -601,6 +601,7 @@ static const dasm_table_entry dasm_table[] =
 	{ "ns32532",         le,  0, []() -> util::disasm_interface * { return new ns32000_disassembler(ns32000_disassembler::model::ns32532); } },
 	{ "nuon",            be,  0, []() -> util::disasm_interface * { return new nuon_disassembler; } },
 	{ "nsc8105",         be,  0, []() -> util::disasm_interface * { return new m680x_disassembler(8105); } },
+	{ "nvc",             le,  0, []() -> util::disasm_interface * { return new nvc_disassembler; } },
 	{ "nx8_500s",        le,  0, []() -> util::disasm_interface * { return new nx8_500s_disassembler; } },
 	{ "p8xc552",         le,  0, []() -> util::disasm_interface * { return new p8xc552_disassembler; } },
 	{ "p8xc562",         le,  0, []() -> util::disasm_interface * { return new p8xc562_disassembler; } },
